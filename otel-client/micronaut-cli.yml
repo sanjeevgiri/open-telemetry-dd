@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.colorcodecanvas
+testFramework: spock
+sourceLanguage: kotlin
+buildTool: gradle
+features: [annotation-api, app-name, gradle, http-client, jackson-databind, kotlin, kotlin-application, kotlin-build, logback, micronaut-build, readme, shade, spock, undertow-server, yaml]
