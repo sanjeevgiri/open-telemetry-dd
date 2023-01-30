@@ -1,0 +1,10 @@
+micronaut:
+  application:
+    name: otlpClient
+netty:
+  default:
+    allocator:
+      max-order: 3
+otel:
+  traces:
+    exporter: otlp
