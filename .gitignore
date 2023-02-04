@@ -3,3 +3,5 @@
 *.ipr
 *.iws
 *.log
+httpRequests/*.txt
+httpRequests/*.json

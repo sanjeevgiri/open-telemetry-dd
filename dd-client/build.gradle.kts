@@ -31,6 +31,7 @@ dependencies {
 
     implementation("io.opentracing:opentracing-api:0.33.0")
     implementation("io.opentracing:opentracing-util:0.33.0")
+    implementation("com.datadoghq:dd-trace-api:1.6.0")
 
 //    implementation("io.opentelemetry:opentelemetry-api:1.20.1")
 //    implementation("io.opentelemetry:opentelemetry-sdk:1.20.1")
