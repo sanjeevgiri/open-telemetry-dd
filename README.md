@@ -44,10 +44,15 @@
   - JAVA_OPTS=-javaagent:c:/wenv/workspace/opentelemetry-dd-poc/dd-java-tracer-agent.jar or in VM opts just include the value
   - datadog.yaml > apm_config.log_file: c:/wenv/workspace/opentelemetry-dd-poc/dd-trace.log for troubleshooting
   - Process config enable process metrics logging
-  - Trace api using otel vs open tracing vs dd:
+  - Trace api dd tracer agent:
     - https://docs.datadoghq.com/tracing/trace_collection/open_standards/java/
     - https://docs.datadoghq.com/tracing/trace_collection/custom_instrumentation/java/
     - https://opentelemetry.io/docs/instrumentation/java/manual/
+  - Linking logs and traces
+    - https://docs.datadoghq.com/logs/log_collection/java/?tab=logback
+    - logback trace and span ids injection
+  - Trace api with otel tracer agent
+    - 
 
 ## References
 - https://opentelemetry.io/docs/
