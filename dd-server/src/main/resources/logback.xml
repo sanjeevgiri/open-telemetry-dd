@@ -10,7 +10,7 @@
   </appender>
 
   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-    <file>dd-client/logs/dd-server.log</file>
+    <file>dd-server/logs/dd-server.log</file>
     <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
   </appender>
 

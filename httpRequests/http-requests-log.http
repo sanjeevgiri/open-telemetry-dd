@@ -1,4 +1,80 @@
 GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-03T220821.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-03T220818.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+
+<> 2023-02-03T220812.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+
+<> 2023-02-03T220752.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-03T220745.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-03T220743.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+
+<> 2023-02-03T220505.404.json
+
+###
+
+GET http://localhost:8000/ddserver/randomuuid
+
+<> 2023-02-03T220443.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-03T220424.404.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-03T220409.404.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
 
 <> 2023-02-03T170211.200.txt
 
