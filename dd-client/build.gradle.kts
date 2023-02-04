@@ -23,8 +23,19 @@ dependencies {
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
-    runtimeOnly("ch.qos.logback:logback-classic")
+
+    implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
+    implementation("ch.qos.logback:logback-classic")
+    implementation("net.logstash.logback:logstash-logback-encoder:7.2")
     implementation("io.micronaut:micronaut-validation")
+
+    //implementation("io.opentracing:opentracing-util:0.33.0")
+    implementation("io.opentelemetry:opentelemetry-api:1.20.1")
+    implementation("io.opentelemetry:opentelemetry-sdk:1.20.1")
+    implementation("io.opentelemetry:opentelemetry-semconv:1.20.1-alpha")
+
+    implementation("io.vavr:vavr-kotlin:0.10.2")
+
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
@@ -32,7 +43,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.codecanvas.ApplicationKt")
+    mainClass.set("com.codecanvas.ddclient.DdClientApp")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")

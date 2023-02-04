@@ -1,7 +1,10 @@
 micronaut:
   application:
     name: ddClient
+  server:
+    port: 8001
 netty:
   default:
     allocator:
       max-order: 3
+

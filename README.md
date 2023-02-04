@@ -7,10 +7,46 @@
 - Compare differences between using opentelemetry SDK vs using DD SDK
 
 ![otlp.png](otlp.png)
-Opentelemetry instrumented applications
+
+**Opentelemetry instrumented applications**
 
 ![dd.png](dd.png)
-Datadog instrumented applications
+
+**Datadog instrumented applications**
+
+## Notes
+- settings > search > processors > build > annotation processing
+- gradle reload for classes in red?
+- gradle application
+- logback jansi
+- DD agent
+  - Execute msi as cmd prompt admin user - start /wait msiexec /qn /i datadog-agent-7-latest.amd64.msi APIKEY="xxx" SITE="datadoghq.com"
+  - user/orgsettings/apikeys
+  - C:\Program Files\Datadog\Datadog Agent
+- Configure DD agent
+  - agent configuration file - https://docs.datadoghq.com/agent/guide/agent-configuration-files/?tab=agentv6v7
+  - %ProgramData%\Datadog\datadog.yaml
+- Configure application log collection
+  - https://docs.datadoghq.com/logs/log_collection/java/?tab=logback
+- Collecting and publishing application logs https://docs.datadoghq.com/logs/log_collection/?tab=application
+  - loback and pom
+- Configure agent for application logs (https://docs.datadoghq.com/logs/log_collection/java/?tab=logback#configure-the-datadog-agent)
+  - https://docs.datadoghq.com/agent/basic_agent_usage/windows/?tab=gui
+  - C:\Program Files\Datadog\Datadog Agent\bin>agent.exe run | stop-service | restart-service | stop-service
+  - http://127.0.0.1:5002/ (agent dashboard)
+- Configure application to be traced with dd agent
+  - Update datadog.yaml file to send traces by setting "apm_config.enabled=true" (says optional? but connect failing)
+  - Test agent status - java -jar c:/wenv/workspace/opentelemetry-dd-poc/dd-java-tracer-agent.jar sampleTrace -c 1
+  - https://docs.datadoghq.com/tracing/troubleshooting/connection_errors/
+  - netstat -a -n -o | grep 8126
+  - restarting the agent after updating the datadog agent worked
+  - https://docs.datadoghq.com/tracing/trace_collection/dd_libraries/java/?tab=springboot
+  - JAVA_OPTS=-javaagent:c:/wenv/workspace/opentelemetry-dd-poc/dd-java-tracer-agent.jar or in VM opts just include the value
+  - datadog.yaml > apm_config.log_file: c:/wenv/workspace/opentelemetry-dd-poc/dd-trace.log for troubleshooting
+  - Process config enable process metrics logging
+  - Trace api using otel vs open tracing:
+    - https://docs.datadoghq.com/tracing/trace_collection/custom_instrumentation/java/
+    - https://opentelemetry.io/docs/instrumentation/java/manual/
 
 ## References
 - https://opentelemetry.io/docs/

@@ -32,7 +32,7 @@ dependencies {
 
 
 application {
-    mainClass.set("com.example.ApplicationKt")
+    mainClass.set("com.codecanvas.ddserver.DdServerApp")
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")

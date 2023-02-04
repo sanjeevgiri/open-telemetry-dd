@@ -1,7 +1,7 @@
 <configuration>
 
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-    <withJansi>true</withJansi>
+    <withJansi>false</withJansi>
     <!-- encoders are assigned the type
          ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
     <encoder>
@@ -9,7 +9,15 @@
     </encoder>
   </appender>
 
-  <root level="info">
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>dd-client/logs/dd-client.log</file>
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+  </appender>
+
+  <root level="INFO">
     <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
   </root>
+
+
 </configuration>
