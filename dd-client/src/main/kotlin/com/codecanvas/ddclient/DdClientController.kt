@@ -12,7 +12,7 @@ import mu.KotlinLogging
 class DdClientController(private val ddStringGenClient: DdStringGenClient) {
     private val logger = KotlinLogging.logger {}
 
-    @Get
+    @Get("/randomstring")
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomString(headers: HttpHeaders): String {
         logger.info("Generating random string ...")
@@ -20,5 +20,15 @@ class DdClientController(private val ddStringGenClient: DdStringGenClient) {
         span.setAttribute("client", headers.getFirst("x-client").orElse("defaultClient"))
         span.setAttribute("account", headers.getFirst("x-account").orElse("defaultAccount"))
         return ddStringGenClient.randomString()
+    }
+
+    @Get("/randomstringfailure")
+    @Produces(MediaType.TEXT_PLAIN)
+    fun getRandomStringFailure(headers: HttpHeaders): String {
+        logger.info("Generating failure ...")
+        val span = Span.current()
+        span.setAttribute("client", headers.getFirst("x-client").orElse("defaultClient"))
+        span.setAttribute("account", headers.getFirst("x-account").orElse("defaultAccount"))
+        return ddStringGenClient.randomStringFailure()
     }
 }

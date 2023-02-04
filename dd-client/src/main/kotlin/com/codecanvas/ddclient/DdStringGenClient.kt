@@ -14,4 +14,10 @@ interface DdStringGenClient {
     )
     @Get("/ddserver/randomuuid")
     fun randomString(): String
+
+    @Headers(
+        Header(name = ACCEPT, value = MediaType.TEXT_PLAIN)
+    )
+    @Get("/ddserver/randomuuidfailure")
+    fun randomStringFailure(): String
 }

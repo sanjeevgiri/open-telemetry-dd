@@ -28,6 +28,20 @@ dependencies {
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
+
+    // New Ones
+    implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
+    implementation("ch.qos.logback:logback-classic")
+    implementation("net.logstash.logback:logstash-logback-encoder:7.2")
+
+    //implementation("io.opentracing:opentracing-util:0.33.0")
+    implementation("io.opentelemetry:opentelemetry-api:1.20.1")
+    implementation("io.opentelemetry:opentelemetry-sdk:1.20.1")
+    implementation("io.opentelemetry:opentelemetry-semconv:1.20.1-alpha")
+
+    implementation("io.vavr:vavr-kotlin:0.10.2")
+
+
 }
 
 
