@@ -52,7 +52,16 @@
     - https://docs.datadoghq.com/logs/log_collection/java/?tab=logback
     - logback trace and span ids injection
   - Trace api with otel tracer agent
-    - 
+    - Update gradle file with otel libraries
+      - https://github.com/open-telemetry/opentelemetry-java/tree/main/sdk-extensions/autoconfigure
+    - Update logback for linking logs and traces (not required? no logs)
+    - Update application.yml file for server port
+    - Download otel java tracer agent
+    - Include agent in the run command
+    - Include agent debugger in the run command -Dotel.javaagent.debug=true
+    - In the controller use the Span.current span to trace and log as well
+    - Update datadog.yaml with otel instrumented app log files
+    - otel http exporter did not work, tried sing grpc port
 
 ## References
 - https://opentelemetry.io/docs/

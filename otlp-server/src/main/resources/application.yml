@@ -1,6 +1,8 @@
 micronaut:
   application:
     name: otlpServer
+  server:
+    port: 9000
 netty:
   default:
     allocator:

@@ -35,9 +35,11 @@ dependencies {
     implementation("net.logstash.logback:logstash-logback-encoder:7.2")
     implementation("io.micronaut:micronaut-validation")
 
-    implementation("io.opentelemetry:opentelemetry-api:1.20.1")
-    implementation("io.opentelemetry:opentelemetry-sdk:1.20.1")
-    implementation("io.opentelemetry:opentelemetry-semconv:1.20.1-alpha")
+    implementation("io.opentelemetry:opentelemetry-api:1.22.0")
+    implementation("io.opentelemetry:opentelemetry-sdk:1.22.0")
+    implementation("io.opentelemetry:opentelemetry-exporter-otlp:1.22.0")
+    implementation("io.opentelemetry:opentelemetry-semconv:1.22.0-alpha")
+    implementation("io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.22.0-alpha")
 
     implementation("io.vavr:vavr-kotlin:0.10.2")
 }

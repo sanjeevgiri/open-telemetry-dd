@@ -1,3 +1,133 @@
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-04T231930.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-04T231928.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-04T231541.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-04T231539.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 2
+x-account: 2a
+
+<> 2023-02-04T230949.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstringfailure
+x-client: 3
+x-account: 3a
+
+<> 2023-02-04T230016.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T225517.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T225515.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T224825.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T224823.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T224213.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T223726.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T223724.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+x-client: 1
+x-account: 1a
+
+<> 2023-02-04T223338.500.json
+
+###
+
+GET http://localhost:9000/otelserver/randomuuid
+
+<> 2023-02-04T222453.200.txt
+
+###
+
+GET http://localhost:9000/otelserver/randomuuid
+
+<> 2023-02-04T222447.200.txt
+
+###
+
+GET http://localhost:9000/otlpserver/randomuuid
+
+<> 2023-02-04T222413.404.json
+
+###
+
 GET http://localhost:8001/ddclient/randomstringfailureotelsdk
 x-client: 3
 x-account: 3a
@@ -255,140 +385,6 @@ x-client: 1
 x-account: 1a
 
 <> 2023-02-03T235744.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T235325.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T235322.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T235319.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T235316.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-03T235315.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T235303.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T235016.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-03T233519.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-03T233512.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T233508.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-03T232146.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T232141.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-03T220821.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T220818.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-03T220812.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-03T220752.500.json
 
 ###
 

@@ -6,10 +6,9 @@ import io.micronaut.http.annotation.Get
 import io.micronaut.http.annotation.Produces
 import mu.KotlinLogging
 
-@Controller("/otelserver")
-class DdServerController {
+@Controller("/otlpserver")
+class OtlpServerController {
     private val logger = KotlinLogging.logger {}
-
 
     @Get("/randomuuid")
     @Produces(MediaType.TEXT_PLAIN)
