@@ -11,7 +11,6 @@ import mu.KotlinLogging
 class DdServerController {
     private val logger = KotlinLogging.logger {}
 
-
     @Get("/randomuuid")
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomUuid(headers: HttpHeaders): String {
@@ -23,6 +22,6 @@ class DdServerController {
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomUuidFailure(headers: HttpHeaders): String {
         logger.info("Simulating failure event")
-        throw java.lang.RuntimeException("Simulated error with trace ${headers.get("x-b3-traceid")}")
+        throw TraceableException("Simulated error")
     }
 }

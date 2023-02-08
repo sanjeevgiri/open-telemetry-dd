@@ -1,3 +1,149 @@
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+ot-baggage-baccount: 1a
+ot-baggage-bclient: 1
+tracestate: bclient=1,baccount=1a
+
+<> 2023-02-08T010428.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+ot-baggage-baccount: 1a
+ot-baggage-bclient: 1
+tracestate: bclient=1,baccount=1a
+
+<> 2023-02-08T010417.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+ot-baggage-baccount: 1a
+ot-baggage-bclient: 1
+tracestate: bclient=1,baccount=1a
+
+<> 2023-02-08T010313.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+ot-baggage-baccount: 1a
+ot-baggage-bclient: 1
+tracestate: bclient=1,baccount=1a
+
+<> 2023-02-08T010231.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+ot-baggage-baccount: 1a
+ot-baggage-bclient1:
+
+<> 2023-02-08T004049.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+
+<> 2023-02-08T003705.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+Baggage-bclient: 1
+Baggage-baccount: 1a
+
+<> 2023-02-08T003552.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage-bclient: 1
+baggage-baccount: 1a
+
+<> 2023-02-08T003424.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage-bclient: 1,
+baggage-baccount: 1a
+
+<> 2023-02-08T003235.200.txt
+
+###
+
 GET http://localhost:8001/ddclient/randomstringfailure
 x-client: 3
 x-account: 3a
@@ -504,88 +650,6 @@ x-b3-account: 3a
 baggage: bclient=1,baccount=1a
 
 <> 2023-02-07T222841.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-x-b3-client: 3
-x-b3-account: 3a
-baggage: bclient=1,baccount=1a
-
-<> 2023-02-07T222812.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-x-b3-client: 1
-x-b3-account: 1a
-dd-client: 1
-dd-account: 1a
-baggage: bclient=1,baccount=1a
-
-<> 2023-02-07T222720.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-07T215952.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-07T215950.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-07T215949.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-07T215805.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-07T214849.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-07T214605.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-###
-
-GET http://localhost:9000/otlpserver/randomuuid
 
 ###
 

@@ -1,31 +1,41 @@
 package com.codecanvas.ddclient
 
 import io.micronaut.http.HttpHeaders
+import io.micronaut.http.HttpRequest
 import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 import io.micronaut.http.annotation.Produces
-import io.vavr.kotlin.Try
+import io.micronaut.http.client.HttpClient
+import io.micronaut.http.uri.UriBuilder
 import mu.KotlinLogging
+import org.reactivestreams.Publisher
 
 @Controller("/ddclient")
-class DdClientController(private val ddStringGenClient: DdStringGenClient) {
+class DdClientController(private val client: HttpClient) {
     private val logger = KotlinLogging.logger {}
 
     @Get("/randomstring")
     @Produces(MediaType.TEXT_PLAIN)
-    fun getRandomString(headers: HttpHeaders): String {
+    fun getRandomString(headers: HttpHeaders): Publisher<String> {
         logger.info("Generating random string ...")
-        return ddStringGenClient.randomString()
+
+        val req = HttpRequest.GET<String>(UriBuilder.of("http://localhost:8000/ddserver/randomuuid").build())
+        headers.filter { header -> header.key.startsWith("x-api-") }
+            .forEach { header -> req.header(header.key, header.value.first()) }
+
+        return client.retrieve(req, String::class.java)
     }
 
     @Get("/randomstringfailure")
     @Produces(MediaType.TEXT_PLAIN)
-    fun getRandomStringFailure(headers: HttpHeaders): String {
+    fun getRandomStringFailure(headers: HttpHeaders): Publisher<String> {
         logger.info("Generating failure ...")
-        return Try { ddStringGenClient.randomStringFailure() }
-            .onFailure { e -> logger.error("encountered error", e) }
-            .getOrElseThrow { e -> RuntimeException(e) }
 
+        val req = HttpRequest.GET<String>(UriBuilder.of("http://localhost:8000/ddserver/randomuuidfailure").build())
+        headers.filter { header -> header.key.startsWith("x-api-") }
+            .forEach { header -> req.header(header.key, header.value.first()) }
+
+        return client.retrieve(req, String::class.java)
     }
 }
