@@ -17,9 +17,9 @@ class OtlpClientController(private val ddStringGenClient: OtlpStringGenClient) {
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomStringOtelSdk(headers: HttpHeaders): String {
         logger.info("Generating random string (otel sdk) ...")
-        val span = Span.current()
-        span.setAttribute("otelsdk.clientId", headers.getFirst("x-client").orElse("defaultClient"))
-        span.setAttribute("otelsdk.clientAccount", headers.getFirst("x-account").orElse("defaultAccount"))
+//        val span = Span.current()
+//        span.setAttribute("otelsdk.clientId", headers.getFirst("x-client").orElse("defaultClient"))
+//        span.setAttribute("otelsdk.clientAccount", headers.getFirst("x-account").orElse("defaultAccount"))
         return ddStringGenClient.randomString()
     }
 
@@ -29,8 +29,8 @@ class OtlpClientController(private val ddStringGenClient: OtlpStringGenClient) {
         logger.info("Generating failure (otel sdk)...")
         val span = Span.current()
         val traceId = span.spanContext.traceId
-        span.setAttribute("otelsdk.clientId", headers.getFirst("x-client").orElse("defaultClient"))
-        span.setAttribute("otelsdk.accountId", headers.getFirst("x-account").orElse("defaultAccount"))
+//        span.setAttribute("otelsdk.clientId", headers.getFirst("x-client").orElse("defaultClient"))
+//        span.setAttribute("otelsdk.accountId", headers.getFirst("x-account").orElse("defaultAccount"))
         return Try { ddStringGenClient.randomStringFailure() }
             .onFailure { e -> logger.error(e) { traceId } }
             .getOrElseThrow { -> RuntimeException(traceId) }

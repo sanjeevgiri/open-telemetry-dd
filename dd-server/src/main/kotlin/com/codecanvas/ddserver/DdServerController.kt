@@ -1,5 +1,6 @@
 package com.codecanvas.ddserver
 
+import io.micronaut.http.HttpHeaders
 import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
@@ -13,15 +14,15 @@ class DdServerController {
 
     @Get("/randomuuid")
     @Produces(MediaType.TEXT_PLAIN)
-    fun getRandomUuid(): String {
+    fun getRandomUuid(headers: HttpHeaders): String {
         logger.info("Generating random string on server ...")
         return java.util.UUID.randomUUID().toString()
     }
 
     @Get("/randomuuidfailure")
     @Produces(MediaType.TEXT_PLAIN)
-    fun getRandomUuidFailure(): String {
+    fun getRandomUuidFailure(headers: HttpHeaders): String {
         logger.info("Simulating failure event")
-        throw java.lang.RuntimeException("Simulated error")
+        throw java.lang.RuntimeException("Simulated error with trace ${headers.get("x-b3-traceid")}")
     }
 }

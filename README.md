@@ -62,7 +62,21 @@
     - In the controller use the Span.current span to trace and log as well
     - Update datadog.yaml with otel instrumented app log files
     - otel http exporter did not work, tried sing grpc port
+  - Tracing using headers
+    - https://github.com/DataDog/dd-trace-java/issues/2236
+    - https://vertexinc.atlassian.net/browse/SRE-500
+  - Trace tags and header propagation datadog
+    - https://github.com/openzipkin/b3-propagation#multiple-headers
+    - 
+    - https://docs.datadoghq.com/tracing/trace_collection/library_config/java/
+      - -Ddd.trace.header.tags
+      - -Ddd.propagation.style.inject=Datadog,B3
+      - -Ddd.propagation.style.extract=Datadog,B3
+      - -Ddd.trace.header.baggage
+  - Trace tags and header propagation with otlp
+    - https://github.com/openzipkin/b3-propagation#multiple-headers
 
 ## References
 - https://opentelemetry.io/docs/
 - https://docs.datadoghq.com/opentelemetry/
+- 

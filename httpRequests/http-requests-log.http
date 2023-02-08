@@ -1,390 +1,591 @@
-GET http://localhost:9001/otlpclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T231930.200.txt
-
-###
-
-GET http://localhost:9001/otlpclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T231928.200.txt
-
-###
-
-GET http://localhost:9001/otlpclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T231541.200.txt
-
-###
-
-GET http://localhost:9001/otlpclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T231539.200.txt
-
-###
-
-GET http://localhost:9001/otlpclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T230949.500.json
-
-###
-
-GET http://localhost:9001/otlpclient/randomstringfailure
+GET http://localhost:8001/ddclient/randomstringfailure
 x-client: 3
 x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
 
-<> 2023-02-04T230016.500.json
+<> 2023-02-07T235851.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+X-B3-client: 2
+X-B3-account: 2a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T235848.200.txt
 
 ###
 
 GET http://localhost:9001/otlpclient/randomstring
 x-client: 1
 x-account: 1a
-
-<> 2023-02-04T225517.200.txt
-
-###
-
-GET http://localhost:9001/otlpclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T225515.200.txt
+x-b3-client: 1
+x-b3-account: 1a
 
 ###
 
 GET http://localhost:9001/otlpclient/randomstring
 x-client: 1
 x-account: 1a
-
-<> 2023-02-04T224825.200.txt
+x-b3-client: 1
+x-b3-account: 1a
 
 ###
 
-GET http://localhost:9001/otlpclient/randomstring
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235750.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235741.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235619.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235617.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235613.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235601.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235438.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235430.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T235300.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+X-B3-client: 2
+X-B3-account: 2a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T235125.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+X-B3-client: 2
+X-B3-account: 2a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T234748.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+X-B3-client: 2
+X-B3-account: 2a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T234727.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+x-b3-client: 2
+x-b3-account: 2a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T234616.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T234549.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 2
+x-account: 2a
+x-b3-client: 2
+x-b3-account: 2a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T234339.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T232032.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T231649.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T231322.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T231211.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T231209.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T231050.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T231025.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T231011.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T231005.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T225840.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T225801.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T225732.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T225650.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+X-B3-client: 1
+X-B3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T225530.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T225500.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+x-datadog-client: 3
+x-datadog-account: 3a
+baggage: bclient=3,baccount=3a
+
+<> 2023-02-07T225418.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+X-B3-client: 1
+X-B3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1
+baggage: baccount-1a
+
+<> 2023-02-07T225049.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+X-B3-client: 1
+X-B3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1
+
+<> 2023-02-07T224003.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+x-datadog-client: 1
+x-datadog-account: 1a
+baggage: bclient=1
+
+<> 2023-02-07T223749.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+dd-client: 1
+dd-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T223634.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T222841.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+x-client: 3
+x-account: 3a
+x-b3-client: 3
+x-b3-account: 3a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T222812.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
+x-b3-client: 1
+x-b3-account: 1a
+dd-client: 1
+dd-account: 1a
+baggage: bclient=1,baccount=1a
+
+<> 2023-02-07T222720.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
 x-client: 1
 x-account: 1a
 
-<> 2023-02-04T224823.200.txt
+<> 2023-02-07T215952.200.txt
 
 ###
 
-GET http://localhost:9001/otlpclient/randomstring
+GET http://localhost:8001/ddclient/randomstring
 x-client: 1
 x-account: 1a
 
-<> 2023-02-04T224213.200.txt
+<> 2023-02-07T215950.200.txt
 
 ###
 
-GET http://localhost:9001/otlpclient/randomstring
+GET http://localhost:8001/ddclient/randomstring
 x-client: 1
 x-account: 1a
 
-<> 2023-02-04T223726.200.txt
+<> 2023-02-07T215949.200.txt
 
 ###
 
-GET http://localhost:9001/otlpclient/randomstring
+GET http://localhost:8001/ddclient/randomstring
 x-client: 1
 x-account: 1a
 
-<> 2023-02-04T223724.200.txt
+<> 2023-02-07T215805.500.json
 
 ###
 
-GET http://localhost:9001/otlpclient/randomstring
+GET http://localhost:8001/ddclient/randomstring
 x-client: 1
 x-account: 1a
 
-<> 2023-02-04T223338.500.json
+<> 2023-02-07T214849.500.json
 
 ###
 
-GET http://localhost:9000/otelserver/randomuuid
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
 
-<> 2023-02-04T222453.200.txt
+<> 2023-02-07T214605.200.txt
 
 ###
 
-GET http://localhost:9000/otelserver/randomuuid
-
-<> 2023-02-04T222447.200.txt
+GET http://localhost:8001/ddclient/randomstring
+x-client: 1
+x-account: 1a
 
 ###
 
 GET http://localhost:9000/otlpserver/randomuuid
-
-<> 2023-02-04T222413.404.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailureotelsdk
-x-client: 3
-x-account: 3a
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T010304.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T010225.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T010220.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T010107.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T010105.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T010101.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T005906.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T005846.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T005843.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T005428.404.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T005420.404.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T004714.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T004119.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T004117.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailureotelsdk
-x-client: 3
-x-account: 3a
-
-<> 2023-02-04T003947.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T003943.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T002501.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T002455.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-04T002452.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T002449.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T002444.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailureotelsdk
-x-client: 3
-x-account: 3a
-
-<> 2023-02-04T002441.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstringotelsdk
-x-client: 1
-x-account: 1a
-
-###
-
-GET http://localhost:8001/ddclient/randomstringfailure
-x-client: 3
-x-account: 3a
-
-<> 2023-02-04T000823.500.json
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T000649.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T000647.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 2
-x-account: 2a
-
-<> 2023-02-04T000645.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-04T000642.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T235748.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T235747.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T235746.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-x-client: 1
-x-account: 1a
-
-<> 2023-02-03T235744.200.txt
 
 ###
 
