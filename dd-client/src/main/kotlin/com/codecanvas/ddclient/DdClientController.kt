@@ -1,41 +1,50 @@
 package com.codecanvas.ddclient
 
 import io.micronaut.http.HttpHeaders
-import io.micronaut.http.HttpRequest
 import io.micronaut.http.MediaType
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 import io.micronaut.http.annotation.Produces
-import io.micronaut.http.client.HttpClient
-import io.micronaut.http.uri.UriBuilder
 import mu.KotlinLogging
-import org.reactivestreams.Publisher
+import okhttp3.OkHttpClient
+import okhttp3.Request
 
 @Controller("/ddclient")
-class DdClientController(private val client: HttpClient) {
+class DdClientController {
     private val logger = KotlinLogging.logger {}
+    private val client = OkHttpClient()
 
     @Get("/randomstring")
     @Produces(MediaType.TEXT_PLAIN)
-    fun getRandomString(headers: HttpHeaders): Publisher<String> {
+    fun getRandomString(headers: HttpHeaders): String {
         logger.info("Generating random string ...")
 
-        val req = HttpRequest.GET<String>(UriBuilder.of("http://localhost:8000/ddserver/randomuuid").build())
-        headers.filter { header -> header.key.startsWith("x-api-") }
-            .forEach { header -> req.header(header.key, header.value.first()) }
+        val reqBuilder = Request.Builder().url("http://localhost:8000/ddserver/randomuuid")
+        headers.filter { header -> header.key.startsWith("X-API-") }
+            .forEach { header -> reqBuilder.addHeader(header.key, header.value.first()) }
 
-        return client.retrieve(req, String::class.java)
+        headers.get("X-Amzn-Trace-Id")?.let { reqBuilder.addHeader("X-API-amzntraceid", it) }
+        headers.get("x-datadog-traceid")?.let { reqBuilder.addHeader("X-API-ddtraceid", it) }
+
+        client.newCall(reqBuilder.build()).execute().use { response ->
+            return response.body!!.string()
+        }
     }
 
     @Get("/randomstringfailure")
     @Produces(MediaType.TEXT_PLAIN)
-    fun getRandomStringFailure(headers: HttpHeaders): Publisher<String> {
-        logger.info("Generating failure ...")
+    fun getRandomStringFailure(headers: HttpHeaders): String {
+        logger.info("Generating random error ...")
 
-        val req = HttpRequest.GET<String>(UriBuilder.of("http://localhost:8000/ddserver/randomuuidfailure").build())
-        headers.filter { header -> header.key.startsWith("x-api-") }
-            .forEach { header -> req.header(header.key, header.value.first()) }
+        val reqBuilder = Request.Builder().url("http://localhost:8000/ddserver/randomuuidfailure")
+        headers.filter { header -> header.key.startsWith("X-API-") }
+            .forEach { header -> reqBuilder.addHeader(header.key, header.value.first()) }
 
-        return client.retrieve(req, String::class.java)
+        headers.get("X-Amzn-Trace-Id")?.let { reqBuilder.addHeader("X-API-amzntraceid", it) }
+        headers.get("x-datadog-traceid")?.let { reqBuilder.addHeader("X-API-ddtraceid", it) }
+
+        client.newCall(reqBuilder.build()).execute().use { response ->
+            return response.body!!.string()
+        }
     }
 }

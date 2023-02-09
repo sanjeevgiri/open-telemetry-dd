@@ -67,7 +67,7 @@
     - https://vertexinc.atlassian.net/browse/SRE-500
   - Trace tags and header propagation datadog
     - https://github.com/openzipkin/b3-propagation#multiple-headers
-    - 
+    - https://docs.datadoghq.com/tracing/trace_collection/compatibility/java/
     - https://docs.datadoghq.com/tracing/trace_collection/library_config/java/
       - -Ddd.trace.header.tags
       - -Ddd.propagation.style.inject=Datadog,B3

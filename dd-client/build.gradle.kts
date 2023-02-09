@@ -38,6 +38,7 @@ dependencies {
 //    implementation("io.opentelemetry:opentelemetry-semconv:1.20.1-alpha")
 
     implementation("io.vavr:vavr-kotlin:0.10.2")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
