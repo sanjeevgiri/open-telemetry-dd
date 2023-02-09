@@ -23,9 +23,9 @@ class TraceableExceptionHandler(private val errorResponseProcessor: ErrorRespons
             ErrorContext.builder(request)
                 .cause(exception)
                 .errorMessage("${exception.message} " +
-                        "b3 trace: ${request.headers.get("X-B3-traceid")}" +
-                        "amzn trace: ${request.headers.get("x-amzn-trace-id") }" +
-                        "dd trace: ${request.headers.get("x-datadog-trace-id") }")
+                        "b3 trace: ${request.headers.get("X-B3-traceid")} " +
+                        "amzn trace: ${request.headers.get("x-amzn-trace-id") } " +
+                        "dd trace: ${request.headers.get("x-datadog-trace-id") } ")
                 .build(), HttpResponse.badRequest<Any>()
         )
     }
