@@ -29,5 +29,4 @@ class TraceableExceptionHandler(private val errorResponseProcessor: ErrorRespons
                 .build(), HttpResponse.badRequest<Any>()
         )
     }
-
 }

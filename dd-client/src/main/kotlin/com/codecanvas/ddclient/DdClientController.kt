@@ -23,9 +23,6 @@ class DdClientController {
         headers.filter { header -> header.key.startsWith("X-API-") }
             .forEach { header -> reqBuilder.addHeader(header.key, header.value.first()) }
 
-        headers.get("X-Amzn-Trace-Id")?.let { reqBuilder.addHeader("X-API-amzntraceid", it) }
-        headers.get("x-datadog-traceid")?.let { reqBuilder.addHeader("X-API-ddtraceid", it) }
-
         client.newCall(reqBuilder.build()).execute().use { response ->
             return response.body!!.string()
         }
@@ -39,9 +36,6 @@ class DdClientController {
         val reqBuilder = Request.Builder().url("http://localhost:8000/ddserver/randomuuidfailure")
         headers.filter { header -> header.key.startsWith("X-API-") }
             .forEach { header -> reqBuilder.addHeader(header.key, header.value.first()) }
-
-        headers.get("X-Amzn-Trace-Id")?.let { reqBuilder.addHeader("X-API-amzntraceid", it) }
-        headers.get("x-datadog-traceid")?.let { reqBuilder.addHeader("X-API-ddtraceid", it) }
 
         client.newCall(reqBuilder.build()).execute().use { response ->
             return response.body!!.string()

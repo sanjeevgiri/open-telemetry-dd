@@ -1,3 +1,42 @@
+GET http://localhost:9001/otlpclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-API-traceid: 230209-3-1
+
+<> 2023-02-09T215218.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-API-traceid: 230209-3-1
+
+<> 2023-02-09T215130.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-API-traceid: 230209-1-1
+
+<> 2023-02-09T215005.200.txt
+
+###
+
 GET http://localhost:9001/otlpclient/randomstring
 X-API-Trusted-Id: 1
 X-API-Company-Code: 1abc
@@ -561,39 +600,6 @@ x-api-account: 1a
 X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
 
 <> 2023-02-08T221247.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-X-B3-client: 1
-X-B3-account: 1a
-x-api-client: 1
-x-api-account: 1a
-X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
-
-<> 2023-02-08T221244.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-X-B3-client: 1
-X-B3-account: 1a
-x-api-client: 1
-x-api-account: 1a
-X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
-
-<> 2023-02-08T220945.200.txt
-
-###
-
-GET http://localhost:8001/ddclient/randomstring
-X-B3-client: 1
-X-B3-account: 1a
-x-api-client: 1
-x-api-account: 1a
-X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
-
-<> 2023-02-08T220942.200.txt
 
 ###
 
