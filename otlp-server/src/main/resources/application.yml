@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: otlpServer
+  server:
+    port: 9000
+netty:
+  default:
+    allocator:
+      max-order: 3
+otel:
+  traces:
+    exporter: otlp

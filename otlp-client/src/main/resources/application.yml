@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: otlpClient
+  server:
+    port: 9001
+netty:
+  default:
+    allocator:
+      max-order: 3
+otel:
+  traces:
+    exporter: otlp

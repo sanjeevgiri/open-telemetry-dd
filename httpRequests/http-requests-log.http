@@ -1,0 +1,605 @@
+GET http://localhost:9001/otlpclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-API-traceid: 230209-3-1
+
+<> 2023-02-09T215218.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-API-traceid: 230209-3-1
+
+<> 2023-02-09T215130.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-API-traceid: 230209-1-1
+
+<> 2023-02-09T215005.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-API-traceid: 230209-1-1
+
+<> 2023-02-09T213918.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-API-traceid: 230209-1-1
+
+<> 2023-02-09T213306.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-B3-trustedid: 1
+
+<> 2023-02-09T162409.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-B3-trustedid: 1
+
+<> 2023-02-09T162359.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-B3-trustedid: 1
+
+<> 2023-02-09T162347.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-B3-trustedid: 1
+
+<> 2023-02-09T162243.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T161648.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T161137.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T161130.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T160122.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T155418.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T155416.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T155343.500.json
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T142918.200.txt
+
+###
+
+GET http://localhost:9001/otlpclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-09T142637.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+
+<> 2023-02-08T234354.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+
+<> 2023-02-08T234353.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+
+<> 2023-02-08T234352.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+
+<> 2023-02-08T234351.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-08T234229.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-08T234228.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+
+<> 2023-02-08T234226.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d26;Parent=11b1895787bcf6ab;Sampled=1
+
+<> 2023-02-08T234041.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-2000000036ae0f3d27080d20;Parent=21b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233918.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d25;Parent=11b1895787bcf7ab;Sampled=1
+
+<> 2023-02-08T233713.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d24;Parent=11b1895787bcf7aa;Sampled=1
+
+<> 2023-02-08T233641.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d23;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233558.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d22;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233502.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d22;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233500.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233155.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 2
+X-API-Company-Code: 2abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client2
+X-API-Client-Name: SanjeevCo2
+X-API-OSeries-Pod-Id: Client2Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d21;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233152.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstringfailure
+X-API-Trusted-Id: 3
+X-API-Company-Code: 3abc
+X-API-Request-Type: Invoice
+X-API-Client-Id: client3
+X-API-Client-Name: SanjeevCo3
+X-API-OSeries-Pod-Id: Client3Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d22;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T233050.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-API-Trusted-Id: 1
+X-API-Company-Code: 1abc
+X-API-Request-Type: Quote
+X-API-Client-Id: client1
+X-API-Client-Name: SanjeevCo
+X-API-OSeries-Pod-Id: Client1Pod
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T232847.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1ag
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T225404.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1ag
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T225213.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T223025.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T223012.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T222951.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-63e4688c-0000000036ae0f3d27080d20;Parent=11b1895787bcf7a9;Sampled=1
+
+<> 2023-02-08T222948.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T222926.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T222735.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T222639.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T222020.500.json
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T221608.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T221605.200.txt
+
+###
+
+GET http://localhost:8001/ddclient/randomstring
+X-B3-client: 1
+X-B3-account: 1a
+x-api-client: 1
+x-api-account: 1a
+X-Amzn-Trace-Id: Root=1-67891233-abcdef012345678912345678
+
+<> 2023-02-08T221247.200.txt
+
+###
+
