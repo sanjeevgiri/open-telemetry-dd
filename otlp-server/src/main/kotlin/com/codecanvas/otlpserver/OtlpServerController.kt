@@ -22,6 +22,6 @@ class OtlpServerController {
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomUuidFailure(headers: HttpHeaders): String {
         logger.info("Simulating failure event (otlp)")
-        throw java.lang.RuntimeException("Simulated error")
+        throw TraceableException("Simulated error (otlp) ...")
     }
 }

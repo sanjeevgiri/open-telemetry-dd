@@ -1,4 +1,4 @@
-package com.codecanvas.otlpclient
+package com.codecanvas.otlpserver
 
 import io.micronaut.context.annotation.Requirements
 import io.micronaut.context.annotation.Requires
@@ -22,10 +22,7 @@ class TraceableExceptionHandler(private val errorResponseProcessor: ErrorRespons
         return errorResponseProcessor.processResponse(
             ErrorContext.builder(request)
                 .cause(exception)
-                .errorMessage("${exception.message} " +
-                        "b3 trace: ${request.headers.get("X-B3-traceid")} " +
-                        "amzn trace: ${request.headers.get("x-amzn-trace-id") } " +
-                        "dd trace: ${request.headers.get("x-datadog-trace-id") } ")
+                .errorMessage("${exception.message} w3c traceparent: ${request.headers.get("traceparent")} ")
                 .build(), HttpResponse.badRequest<Any>()
         )
     }

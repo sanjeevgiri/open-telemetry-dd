@@ -52,6 +52,7 @@
     - https://docs.datadoghq.com/logs/log_collection/java/?tab=logback
     - logback trace and span ids injection
   - Trace api with otel tracer agent
+    - https://opentelemetry.io/docs/instrumentation/java/automatic/agent-config/ 
     - Update gradle file with otel libraries
       - https://github.com/open-telemetry/opentelemetry-java/tree/main/sdk-extensions/autoconfigure
     - Update logback for linking logs and traces (not required? no logs)

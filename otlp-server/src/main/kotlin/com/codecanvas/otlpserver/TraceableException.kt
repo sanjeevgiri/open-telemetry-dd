@@ -1,4 +1,4 @@
-package com.codecanvas.otlpclient
+package com.codecanvas.otlpserver
 
 class TraceableException(message: String) : RuntimeException(message) {
 }
