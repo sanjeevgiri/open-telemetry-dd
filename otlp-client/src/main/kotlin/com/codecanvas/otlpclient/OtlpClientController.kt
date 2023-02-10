@@ -6,33 +6,44 @@ import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 import io.micronaut.http.annotation.Produces
 import io.opentelemetry.api.trace.Span
-import io.vavr.kotlin.Try
 import mu.KotlinLogging
+import okhttp3.OkHttpClient
+import okhttp3.Request
 
 @Controller("/otlpclient")
-class OtlpClientController(private val ddStringGenClient: OtlpStringGenClient) {
+class OtlpClientController {
     private val logger = KotlinLogging.logger {}
+    private val client = OkHttpClient()
 
     @Get("/randomstring")
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomStringOtelSdk(headers: HttpHeaders): String {
         logger.info("Generating random string (otel sdk) ...")
+
+        val reqBuilder = Request.Builder().url("http://localhost:9000/otlpserver/randomuuid")
+//        headers.filter { header -> header.key.startsWith("X-API-") }
+//            .forEach { header -> reqBuilder.addHeader(header.key, header.value.first()) }
+//
 //        val span = Span.current()
-//        span.setAttribute("otelsdk.clientId", headers.getFirst("x-client").orElse("defaultClient"))
-//        span.setAttribute("otelsdk.clientAccount", headers.getFirst("x-account").orElse("defaultAccount"))
-        return ddStringGenClient.randomString()
+//        span.setAttribute("api.trustedid", headers.getFirst("X-API-Trusted-Id").orElse("na"))
+
+        client.newCall(reqBuilder.build()).execute().use { response ->
+            return response.body!!.string()
+        }
     }
 
     @Get("/randomstringfailure")
     @Produces(MediaType.TEXT_PLAIN)
     fun getRandomStringFailureOtelSdk(headers: HttpHeaders): String {
-        logger.info("Generating failure (otel sdk)...")
-        val span = Span.current()
-        val traceId = span.spanContext.traceId
-//        span.setAttribute("otelsdk.clientId", headers.getFirst("x-client").orElse("defaultClient"))
-//        span.setAttribute("otelsdk.accountId", headers.getFirst("x-account").orElse("defaultAccount"))
-        return Try { ddStringGenClient.randomStringFailure() }
-            .onFailure { e -> logger.error(e) { traceId } }
-            .getOrElseThrow { -> RuntimeException(traceId) }
+        val reqBuilder = Request.Builder().url("http://localhost:9000/otlpserver/randomuuidfailure")
+        //headers.filter { header -> header.key.startsWith("X-API-") }
+        //    .forEach { header -> reqBuilder.addHeader(header.key, header.value.first()) }
+
+        //headers.get("X-Amzn-Trace-Id")?.let { reqBuilder.addHeader("X-API-amzntraceid", it) }
+        //headers.get("x-datadog-traceid")?.let { reqBuilder.addHeader("X-API-ddtraceid", it) }
+
+        client.newCall(reqBuilder.build()).execute().use { response ->
+            return response.body!!.string()
+        }
     }
 }

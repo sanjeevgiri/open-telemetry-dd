@@ -41,8 +41,8 @@ dependencies {
     implementation("io.opentelemetry:opentelemetry-exporter-otlp:1.22.0")
     implementation("io.opentelemetry:opentelemetry-sdk-extension-autoconfigure:1.22.0-alpha")
 
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("io.vavr:vavr-kotlin:0.10.2")
-
 }
 
 

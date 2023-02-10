@@ -61,7 +61,7 @@
     - Include agent debugger in the run command -Dotel.javaagent.debug=true
     - In the controller use the Span.current span to trace and log as well
     - Update datadog.yaml with otel instrumented app log files
-    - otel http exporter did not work, tried sing grpc port
+    - otel http exporter did not work, tried using grpc port which seems to work
   - Tracing using headers
     - https://github.com/DataDog/dd-trace-java/issues/2236
     - https://vertexinc.atlassian.net/browse/SRE-500
@@ -73,6 +73,29 @@
       - -Ddd.propagation.style.inject=Datadog,B3
       - -Ddd.propagation.style.extract=Datadog,B3
       - -Ddd.trace.header.baggage
+```
+-javaagent:C:\wenv\workspace\opentelemetry-dd-poc\dd-java-tracer-agent.jar
+-Ddd.version=0.1
+-Ddd.app=dd-client
+-Ddd.service=dd-client-app
+-Ddd.env=local
+-Ddd.logs.injection=true
+-Ddd.trace.header.tags=X-API-ddtraceid,X-API-amzntraceid,X-API-Trusted-Id,X-API-Company-Code,X-API-Request-Type,X-API-Client-Id,X-API-Client-Name,X-API-OSeries-Pod-Id
+-Ddd.propagation.style.inject=datadog,b3,b3multi,xray
+-Ddd.propagation.style.extract=datadog,b3,b3multi,xray
+```
+
+```
+-javaagent:C:\wenv\workspace\opentelemetry-dd-poc\dd-java-tracer-agent.jar
+-Ddd.version=0.1
+-Ddd.app=dd-server
+-Ddd.service=dd-server-app
+-Ddd.env=local
+-Ddd.logs.injection=true
+-Ddd.trace.header.tags=X-API-ddtraceid,X-API-amzntraceid,X-API-Trusted-Id,X-API-Company-Code,X-API-Request-Type,X-API-Client-Id,X-API-Client-Name,X-API-OSeries-Pod-Id
+-Ddd.propagation.style.inject=datadog,b3,b3multi,xray
+-Ddd.propagation.style.extract=datadog,b3,b3multi,xray
+```
   - Trace tags and header propagation with otlp
     - https://github.com/openzipkin/b3-propagation#multiple-headers
 
